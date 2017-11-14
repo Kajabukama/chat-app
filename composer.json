@@ -1,0 +1,22 @@
+{
+    "name": "kajabukama/chat-ps",
+    "description": "Chat App for PS",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yusuph H. Kajabukama",
+            "email": "kajabukama@gmail.com"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.0",
+        "illuminate/database": "^5.4",
+        "illuminate/events": "^5.4"
+    },
+    "autoload":{
+      "psr-4":{
+         "PerformanceSupport\\": "src"
+      }
+   }
+}

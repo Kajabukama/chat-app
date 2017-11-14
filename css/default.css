@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+body{
+  font-family: 'Open Sans';
+   padding-top: 100px;
+   background-color: #f9f9f9;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
+.navbar{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: none;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   box-shadow: 0 2px 2px -2px rgba(0,0,0,.15)!important;
+}
+.chat-form-container{
+   position: fixed;
+   padding: 0px;
+   background: rgba(255, 255, 255, 0.8);
+   width: 400px;
+   bottom: 3;
+   left: 50;
+   z-index: 999;
+}
+.form-control{
+   outline-width: 0;
+   border: 2px solid rgba(52, 152, 219,1.0);
+}
+.bg-white{
+   background-color: #fff;
+}
+.navbar-brand{
+   font-weight: 700;
+}
+
+.media-list .media h4{
+  font-weight: 600 !important;
+}
+.media-list .media img{
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+.chat-messages{
+  padding: 15px 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.left-chat-section {
+  padding-left: 30px;
+  color: rgba(0, 0, 0, 0.5);
+}
