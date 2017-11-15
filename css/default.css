@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700');
 
 body{
   font-family: 'Open Sans';
    padding-top: 80px;
-   background-color: #f9f9f9;
+   background-color: #fff;
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: 600;
@@ -19,7 +18,8 @@ h1, h2, h3, h4, h5, h6{
 }
 .navbar-brand{
    font-weight: 700;
-   color: #e74c3c !important;
+   color: #3498db !important;
+   margin-left: 30px !important;
 }
 /*form control customize*/
 .form-control{
@@ -28,24 +28,54 @@ h1, h2, h3, h4, h5, h6{
 }
 .form-control:focus{
   box-shadow: none;
+  border: 2px solid rgba(52, 152, 219,1.0);
 }
-
+.input-group-addon{
+  background-color: transparent;
+  color: #3498db;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 700;
+  border: 2px solid rgba(52, 152, 219,1.0);
+  font-size: 1.8em;
+}
+.input-group-addon:hover{
+  background-color:#2ecc71;
+  color: #ecf0f1;
+}
 /*media list customization*/
-.media-list .media h4{
+.media-list .media h5{
+  color: #3498db;
   font-weight: 600 !important;
+}
+.media-list .media small{
+  margin-left: 10px;
+  font-size: 11px;
+  font-weight: 500;
 }
 .media-list .media img{
   width: 50px;
   height: 50px;
   border-radius: 4px;
 }
+.media-list .media{
+  margin-top: 3px;
+  padding:10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.media-list .media:hover{
+  padding:10px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.01);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
 .chat-messages{
   padding: 15px 15px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  /*background-color: rgba(255, 255, 255, 1);*/
+  /*border-radius: 3px;*/
+  /*border: 1px solid rgba(0, 0, 0, 0.05);*/
 }
 .left-chat-section {
-  padding-left: 30px;
+  padding-left: 50px;
   color: rgba(0, 0, 0, 0.5);
 }

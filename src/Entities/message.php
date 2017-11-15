@@ -4,7 +4,7 @@
 
   class Message extends \Illuminate\Database\Eloquent\Model
   {
-      protected $fillable = ['message'];
+      protected $fillable = ['message', 'sender'];
 
   }
 

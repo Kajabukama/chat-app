@@ -9,11 +9,9 @@ $(document).ready( function(){
       ev.preventDefault();
       message = messageInput.val();
       conn.send(message);
-
       var media = "<li class='media'><div class='media-left'>"+
       "<a href='#'><img class='media-object' src='imgs/100x100.png'></a></div>"+
-      "<div class='media-body'><h5 class='media-heading'>Kajabukama</h5>" + message + "</div></li>";
-
+      "<div class='media-body'><h5 class='media-heading'>Kajabukama <small>12:23 PM</small></h5>" + message + "</div></li>";
       messageList.prepend(media)
       messageInput.val("");
    })
@@ -31,8 +29,7 @@ $(document).ready( function(){
 
            var media = "<li class='media'><div class='media-left'>"+
            "<a href='#'><img class='media-object' src='imgs/100x100.png'></a></div>"+
-           "<div class='media-body'><h5 class='media-heading'>Kajabukama</h5>"+ this.message +"</div></li>";
-
+           "<div class='media-body'><h5 class='media-heading'>Kajabukama<small>12:23 PM</small></h5>"+ this.message +"</div></li>";
            messageList.prepend(media)
          });
        }
@@ -44,8 +41,7 @@ $(document).ready( function(){
 
      var media = "<li class='media'><div class='media-left'>"+
      "<a href='#'><img class='media-object' src='imgs/100x100.png'></a></div>"+
-     "<div class='media-body'><h5 class='media-heading'>Kajabukama</h5>"+ e.data +"</div></li>";
-
+     "<div class='media-body'><h5 class='media-heading'>Kajabukama <small>12:23 PM</small></h5>"+ e.data +"</div></li>";
      messageList.prepend(media)
      messageInput.val("");
    }

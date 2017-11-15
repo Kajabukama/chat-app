@@ -11,8 +11,8 @@
 <body>
 
    <nav class="navbar navbar-default navbar-fixed-top">
-     <div class="container">
-        <a class="navbar-brand" href="#">PerformanceSupport</a>
+     <div class="container-fluid">
+        <a class="navbar-brand" href="#">PerformanceSupport</a></a>
      </div>
    </nav>
 
@@ -22,8 +22,11 @@
           <div class="col-md-2"></div>
           <div class="col-md-8">
              <form class="chat-form" method="POST">
-               <div class="form-row">
-                 <input type="text" style="height:50px;" class="form-control mb-2 mb-sm-0 text-area" id="message" placeholder="Type your message here..."></textarea>
+               <div class="form-group">
+                 <div class="input-group">
+                   <div class="input-group-addon">+</div>
+                   <input type="text" style="height:50px;" class="form-control mb-2 mb-sm-0 text-area" id="message" placeholder="Type your message here..." autocomplete="off">
+                 </div>
                </div>
              </form>
           </div>
@@ -64,9 +67,8 @@
    </div>
 
 
-
    <script src="js/jquery-3.2.1.slim.min.js"></script>
-   <script src="js/popper.min.js"></script>
+   <script src="js/jquery.cookie.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/chat.js"></script>
 
