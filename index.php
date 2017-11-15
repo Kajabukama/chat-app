@@ -19,8 +19,8 @@
    <nav class="navbar navbar-default navbar-fixed-bottom">
      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3"></div>
-          <div class="col-md-7">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
              <form class="chat-form" method="POST">
                <div class="form-row">
                  <input type="text" style="height:50px;" class="form-control mb-2 mb-sm-0 text-area" id="message" placeholder="Type your message here..."></textarea>
@@ -35,7 +35,7 @@
    <div class="container-fluid">
       <div class="row">
 
-         <div class="col-md-3">
+         <div class="col-md-2">
             <div class="row">
                <div class="col-md-12">
                  <div class="left-chat-section">
@@ -50,7 +50,7 @@
             </div>
          </div>
 
-         <div class="col-md-7">
+         <div class="col-md-8">
             <div class="chat-messages">
                <ul class="media-list" id="message-list"></ul>
             </div>

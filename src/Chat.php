@@ -4,6 +4,7 @@
 
    use Ratchet\MessageComponentInterface;
    use Ratchet\ConnectionInterface;
+   use PerformanceSupport\Entities\Message;
 
    class Chat implements MessageComponentInterface
    {
@@ -27,17 +28,20 @@
                $client->send($msg);
             }
          }
+         Message::create([
+           'message' => $msg
+         ]);
       }
 
       public function onClose(ConnectionInterface $conn)
       {
          $this->clients->detach($conn);
-         echo "{ $conn->resourceId } is now offline\n";
+         echo "{$conn->resourceId} is now offline\n";
       }
 
-      public function onError(ConnectionInterface $conn, \Exception $err)
+      public function onError(ConnectionInterface $conn, \Exception $e)
       {
-         echo " An error occured : { $err->getMessage() }";
+         echo " An error occured : {$e->getMessage()}";
          $conn->close();
       }
    }

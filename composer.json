@@ -17,6 +17,9 @@
     "autoload":{
       "psr-4":{
          "PerformanceSupport\\": "src"
-      }
+      },
+      "files":[
+        "src/setup_eloquent.php"
+      ]
    }
 }
