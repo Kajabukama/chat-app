@@ -23,14 +23,25 @@
 
       public function onMessage(ConnectionInterface $from, $msg)
       {
-         foreach ($this->clients as $client) {
-            if ($client !== $from) {
-               $client->send($msg);
+        $msg = json_decode($msg);
+        switch ($msg->type) {
+          case 'message':
+            foreach ($this->clients as $client) {
+              if ($client !== $from) {
+                $client->send($msg->text);
+              }
             }
-         }
-         Message::create([
-           'message' => $msg
-         ]);
+            Message::create([
+              'text' => $msg->text,
+              'sender' => $msg->sender
+            ]);
+            break;
+          
+          default:
+            # code...
+            break;
+        }
+         
       }
 
       public function onClose(ConnectionInterface $conn)

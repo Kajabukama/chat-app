@@ -25,7 +25,7 @@
                <div class="form-group">
                  <div class="input-group">
                    <div class="input-group-addon">+</div>
-                   <input type="text" style="height:50px;" class="form-control mb-2 mb-sm-0 text-area" id="message" placeholder="Type your message here..." autocomplete="off">
+                   <input type="text" class="form-control input-lg" id="message" placeholder="Type your message here..." autocomplete="off">
                  </div>
                </div>
              </form>
@@ -48,6 +48,9 @@
                <div class="col-md-12">
                   <div class="left-chat-section">
                     <h5>Direct Messages</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item chat_name"></li>
+                    </ul>
                   </div>
                </div>
             </div>
