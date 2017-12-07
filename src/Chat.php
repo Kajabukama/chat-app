@@ -18,7 +18,7 @@
       public function onOpen(ConnectionInterface $conn)
       {
          $this->clients->attach($conn);
-         echo "{ $conn->resourceId } is now connected\n";
+         echo "$conn->resourceId : is now connected\n";
       }
 
       public function onMessage(ConnectionInterface $from, $msg)
@@ -47,7 +47,7 @@
       public function onClose(ConnectionInterface $conn)
       {
          $this->clients->detach($conn);
-         echo "{$conn->resourceId} is now disconnected\n";
+         echo "$conn->resourceId : is now disconnected\n";
       }
 
       public function onError(ConnectionInterface $conn, \Exception $e)
